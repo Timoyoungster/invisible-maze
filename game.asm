@@ -5,8 +5,12 @@ section .bss
     input: resb 16
 section .text
     global _start
-
+    
 _start:
-   mov rax, 60 
-   mov rdi, 0
-   syscall
+
+    call exit
+
+exit:
+    mov rax, 60 
+    mov rdi, 0
+    syscall

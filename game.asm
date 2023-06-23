@@ -1,16 +1,16 @@
 section .data
-    hello: db "Hello "
-    ending: db "!", 10
+  hello: db "Hello "
+  ending: db "!", 10
 section .bss
-    input: resb 16
+  input: resb 16
 section .text
-    global _start
-    
+  global _start
+  
 _start:
 
-    call exit
+  call exit
 
 exit:
-    mov rax, 60 
-    mov rdi, 0
-    syscall
+  mov rax, 60 
+  mov rdi, 0
+  syscall

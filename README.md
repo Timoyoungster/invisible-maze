@@ -11,3 +11,4 @@ the device.
 (no microchip)
 - use a button battery as power source
 - random gen by gyro, ...
+- find optimal number gen function with neat (random float in; bits out)
